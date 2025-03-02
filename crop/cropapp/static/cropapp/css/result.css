@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('/static/cropapp/img/1.jpg');
+    background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #00ff7f;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 650px;
+    height: 100vh;
+    
+    display: flex; /* Corrected from 'fx' to 'flex' */
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+/* Result Box Styles */
+.result-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; /* Center align with fixed width */
+    max-width: 800px; /* Limit maximum width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.result-box h1 {
+    font-size: 1.9em;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+    text-align: center;
+}
+
+.result-content h2 {
+    font-size: 1.5em;
+    color: #ffcc80;
+    text-align: center;
+
+}
+
+.disease-name {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #ffc107;
+    margin: 10px 0;
+    word-wrap: break-word;      /* Break long words */
+    overflow-wrap: break-word;  /* Handle word breaking */
+    text-overflow: ellipsis;    /* Add ellipsis for overflow */
+    overflow: hidden;
+    max-height: 3em;            /* Limit height to fit in the box */
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.image-preview {
+    margin: 20px 0;
+    
+    justify-content: center;
+    text-align: center;
+}
+
+.image-preview img {
+    max-width: 100%; /* Image width will not exceed the container width */
+    max-height: 300px; /* Limit the height to fit the result box */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    object-fit: contain; /* Ensure the entire image fits within the boundaries */
+    border: 2px solid #ffcc80; /* Optional: border style for the image */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; 
+}
+/* Treatment Information */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+
+/* Upload Button Styles */
+.upload-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+   
+}
+
+.upload-btn:hover {
+    background-color: #e65100;
+    color: #fff;
+    transform: scale(1.05);
+}

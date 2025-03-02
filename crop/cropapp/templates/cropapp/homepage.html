@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Disease Prediction</title>
+<link rel="stylesheet" href="{%static 'cropapp/css/index.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">🌱 Crop Health</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Detect Crop Diseases Effortlessly</h1>
+        <p>Upload an image of your crop and get instant analysis and remedies.</p>
+        <a href="{% url 'upload' %}" class="btn">Upload Image</a>
+    </div>
+</section>
+<section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <h3>Image Analysis</h3>
+            <p>Identify crop diseases using advanced AI models.</p>
+        </div>
+     
+        <div class="feature-card">
+            <h3>Multilingual Support</h3>
+            <p>Get results and remedies in your preferred language.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Our Platform</h2>
+    <p>
+        Our platform helps farmers diagnose crop diseases quickly and accurately using state-of-the-art deep learning models.
+        Get instant insights and remedies to protect your crops and boost your yield.
+    </p>
+</section>
+
+<!-- Footer Section -->
+<footer id="contact">
+    <p>© 2024 Crop Health | All Rights Reserved</p>
+    <p>Contact: <a href="mailto:support@crophealth.com">support@crophealth.com</a></p>
+</footer>
+
+</body>
+</html>

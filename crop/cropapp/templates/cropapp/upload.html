@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Disease Prediction</title>
+<link rel="stylesheet" href="{% static 'cropapp/css/upload.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">🌱 Crop Health</div>
+        <ul class="nav-links">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="upload-box">
+        <h1>Upload Crop Image for Disease Prediction</h1>
+        <p>Get instant analysis and remedies for crop diseases.</p>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <label for="language">Select Language for Translation:</label>
+            <select name="language">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="bn">Bengali</option>
+                <option value="te">Telugu</option>
+<option value="mr">Marathi</option>
+<option value="ta">Tamil</option>
+<option value="gu">Gujarati</option>
+<option value="kn">Kannada</option>
+<option value="ml">Malayalam</option>
+<option value="pa">Punjabi</option>
+<option value="or">Odia</option>
+<option value="ur">Urdu</option>
+<option value="as">Assamese</option>
+<option value="ne">Nepali</option>
+<option value="si">Sinhalese</option>
+<option value="ks">Kashmiri</option>
+<option value="bh">Bhojpuri</option>
+
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+
+                <!-- Add more languages as needed -->
+            </select>
+            <button type="submit">Upload Image</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

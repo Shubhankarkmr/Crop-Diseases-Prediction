@@ -1,0 +1,129 @@
+/* Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background: #000;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #00ff7f;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('/static/cropapp/img/0.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Upload Box Styles */
+.upload-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; /* Center align with fixed width */
+    max-width: 800px; /* Limit maximum width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.upload-box h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #00ff7f;
+    text-align: center;
+}
+
+.upload-box p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ddd;
+    text-align: center;
+}
+
+.upload-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upload-box input[type="file"] {
+    padding: 10px;
+    border: 1px solid #00ff7f;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+  
+}
+
+.upload-box button {
+    padding: 10px 20px;
+    background-color: #00ff7f;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-box button:hover {
+    background-color: #00cc66;
+    transform: scale(1.05);
+}
+
+form select {
+    font-size: 16px;
+    padding: 8px;
+}
+
+form label {
+    font-size: 18px;
+    color: #ddd;
+}
